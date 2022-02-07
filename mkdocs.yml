@@ -1,0 +1,30 @@
+site_name: nmsd
+extra:
+  homepage: http://nmsd.xyz
+
+theme:
+  icon:
+    logo: bootstrap/shield
+  favicon: images/shield.svg
+  features:
+    - navigation.tabs
+  name: material
+  palette:
+    primary: black
+    accent: blue
+  custom_dir: overrides
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_jextensions:
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+nav:
+  - 'Home': 'index.md'
