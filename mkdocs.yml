@@ -2,6 +2,9 @@ site_name: nmsd
 extra:
   homepage: http://nmsd.xyz
 
+site_dir: docs
+docs_dir: src
+
 theme:
   icon:
     logo: bootstrap/shield
