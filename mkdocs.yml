@@ -8,6 +8,8 @@ theme:
   favicon: images/shield.png
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
   name: material
   palette:
     primary: black
@@ -25,6 +27,30 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
+
+# Footer
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nimasaed/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nimasaed
+    - icon: fontawesome/brands/github
+      link: https://github.com/nimasaed
+  generator: false
+
+copyright: Copyright &copy; 2019 - 2022 Nima Saed
+
+# pages
 nav:
-  - 'Home': 'index.md'
+  - 'About': 'index.md'
+  - 'Blog':
+    - 'MSF on Docker': 'Blog/Metasploit-Framework-console.md'
