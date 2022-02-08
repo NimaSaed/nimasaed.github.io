@@ -5,7 +5,7 @@ extra:
 theme:
   icon:
     logo: bootstrap/shield
-  favicon: images/shield.png
+  favicon: favicon.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -34,6 +34,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 
 # Footer
@@ -53,4 +55,7 @@ copyright: Copyright &copy; 2019 - 2022 Nima Saed
 nav:
   - 'About': 'index.md'
   - 'Blog':
-    - 'MSF on Docker': 'Blog/Metasploit-Framework-console.md'
+    - '2021':
+      - 'AWS Profile Changer': 'Blog/AWS-Profile-changer.md'
+    - '2019':
+      - 'MSF on Docker': 'Blog/Metasploit-Framework-console.md'
