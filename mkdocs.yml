@@ -1,14 +1,11 @@
 site_name: nmsd
 extra:
-  homepage: http://nmsd.xyz
-
-site_dir: docs
-docs_dir: src
+  homepage: https://nmsd.xyz
 
 theme:
   icon:
     logo: bootstrap/shield
-  favicon: images/shield.svg
+  favicon: images/shield.png
   features:
     - navigation.tabs
   name: material
@@ -20,7 +17,7 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-markdown_jextensions:
+markdown_extensions:
   - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
