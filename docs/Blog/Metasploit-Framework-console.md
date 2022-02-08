@@ -1,6 +1,8 @@
 # Metasploit Framework console on Docker. (with workspace)
 Sep 20, 2019
 
+![metasploit](../images/merasploit.png)
+
 ## Summary
 
 I am a security specialist. I love Linux and containers. I would not say I like Kali Linux and bloated software. I use Metasploit Framework on Docker with workspace. Although you can start using the MSF docker out of the box, you need a database for using the workspace. Here is how.
