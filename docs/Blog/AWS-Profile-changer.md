@@ -8,6 +8,7 @@ You can add the below function to your bashrc to change the `AWS_PROFILE` enviro
 
 
 ``` bash
+
 function aws_profile() {
 
     local aws_home="$HOME/.aws"
@@ -27,12 +28,14 @@ function aws_profile() {
     done
 
     unset $PS3;
-    export AWS_PROFILE="${profile}";
-    export AWS_REGION=$(cat ${aws_home}/config | sed -n "/${profile}/,/\[/p" | grep region | cut -d '=' -f 2 | sed 's/ //g')
-    export AWS_ACCESS_KEY_ID=$(cat ${aws_home}/credentials | sed -n "/${profile}/,/\[/p" | grep aws_access_key_id | cut -d '=' -f 2 | sed 's/ //g')
-    export AWS_SECRET_ACCESS_KEY=$(cat ${aws_home}/credentials | sed -n "/${profile}/,/\[/p" | grep aws_secret_access_key | cut -d '=' -f 2 | sed 's/ //g')
+    if [ ! -z "${profile}" ];
+    then
+        export AWS_PROFILE="${profile}";
+        export AWS_REGION=$(cat ${aws_home}/config | sed -n "/${profile}/,/\[/p" | grep region | cut -d '=' -f 2 | sed 's/ //g')
+        export AWS_ACCESS_KEY_ID=$(cat ${aws_home}/credentials | sed -n "/${profile}/,/\[/p" | grep aws_access_key_id | cut -d '=' -f 2 | sed 's/ //g')
+        export AWS_SECRET_ACCESS_KEY=$(cat ${aws_home}/credentials | sed -n "/${profile}/,/\[/p" | grep aws_secret_access_key | cut -d '=' -f 2 | sed 's/ //g')
+    fi
 
-}
 }
 ```
 
