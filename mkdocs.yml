@@ -56,6 +56,9 @@ nav:
   - 'About': 'index.md'
   - 'Blog':
     - '2021':
-      - 'AWS Profile Changer': 'Blog/AWS-Profile-changer.md'
+      - 'AWS Profile Changer': 'blog/AWS-Profile-changer.md'
     - '2019':
-      - 'MSF on Docker': 'Blog/Metasploit-Framework-console.md'
+      - 'MSF on Docker': 'blog/Metasploit-Framework-console.md'
+  - 'Notes':
+    - 'Languages':
+      - 'Bash Tips': 'notes/bash-tips.md'
