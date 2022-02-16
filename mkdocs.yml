@@ -12,7 +12,7 @@ theme:
     - navigation.indexes
   name: material
   palette:
-    primary: black
+    #primary: black
     accent: blue
   custom_dir: overrides
 

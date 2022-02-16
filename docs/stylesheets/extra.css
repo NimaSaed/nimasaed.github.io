@@ -1,0 +1,12 @@
+:root {
+  --md-primary-fg-color:    #232f3e;
+}
+:root > * {
+
+    /* Footer */
+    --md-footer-bg-color: #232f3e;
+    /*--md-footer-bg-color--dark: #232f3e;
+    /*--md-footer-fg-color: #fffff;
+    /*--md-footer-fg-color--light: #232f3e;*/
+    /*--md-footer-fg-color--lighter: #232f3e;*/
+}
