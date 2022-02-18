@@ -1,4 +1,6 @@
 site_name: nmsd
+site_url: https://nmsd.xyz
+site_author: Nima Saed
 extra:
   homepage: https://nmsd.xyz
 
