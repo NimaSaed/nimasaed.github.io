@@ -1,4 +1,4 @@
-site_name: nmsd
+site_name: nmsd.xyz
 site_url: https://nmsd.xyz
 site_author: Nima Saed
 extra:
@@ -14,7 +14,7 @@ theme:
     - navigation.indexes
   name: material
   palette:
-    #primary: black
+    primary: custom
     accent: blue
   custom_dir: overrides
 
@@ -51,6 +51,8 @@ extra:
       link: https://www.linkedin.com/in/nimasaed/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/nimasaed
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.nl/@nima
     - icon: fontawesome/brands/github
       link: https://github.com/nimasaed
   generator: false
