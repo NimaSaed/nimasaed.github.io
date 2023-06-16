@@ -9,12 +9,14 @@ hide:
 # Nima Saed
 ## Ethical Hacker, Software Security Engineer, DevSecOps Engineer
 
-I am a security consultant at [Xebia Security](https://xebia.com) in the Netherlands.
+Nima is a skilled security consultant at [Xebia](https://xebia.com) in the Netherlands. They specialize in offering top-notch consultancy services for digital transformation.
 
-I have worked in the IT industry for 19 years and in the security field for the past eight years, mainly as a software security engineer and ethical hacker.
+Nima has an impressive 19-year career in the IT industry, with a specialization in security for the last 13 years. Nima started as a software security engineer and worked as an ethical hacker.
 
-I have studied security technology and applied cryptography. I have a deep knowledge of software security, encryption, and signature, which makes it very helpful to develop and pen-test software components such as authentication and authorisation.
+Nima is well-educated in security tech and cryptography, with expertise in software security, encryption, and digital signatures. He conducts effective penetration tests on software components, particularly those related to authentication and authorization.
 
-I have worked in the medical, education, metal, and software industries, and each has its unique privacy and security challenges. But I always have one common goal among all industries: introducing the security processes as enablers, not blockers, and automation and simplicity were always at the core.
+Throughout Nima's career, he has worked across diverse sectors, including the medical, education, metal, and software industries. Each industry presents its unique set of privacy and security challenges. However, Nima's goal remains constant: introducing security processes as enablers rather than blockers. He firmly believes in the power of automation and simplicity, consistently incorporating these principles at the core of their approach.
+
+Nima is dedicated to guaranteeing your security and triumph in the digital realm. His extensive experience, profound knowledge, and unwavering commitment to excellence empower him to impact your company's security posture substantially.
 
 email: [nsaed@xebia.com](mailto:nsaed@xebia.com)
