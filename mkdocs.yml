@@ -63,6 +63,8 @@ copyright: Copyright &copy; 2019 - 2023 Nima Saed
 nav:
   - 'About': 'index.md'
   - 'Blog':
+    - '2023':
+      - 'Enabling Touch ID for sudo ': 'blog/sudo-with-touch-id-on-Mac.md'
     - '2021':
       - 'AWS Profile Changer': 'blog/AWS-Profile-changer.md'
     - '2019':
