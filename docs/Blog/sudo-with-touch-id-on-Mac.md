@@ -7,43 +7,29 @@ To enable Touch ID for `sudo`, follow these steps:
 1. Open the Terminal application on your Mac.
 
 2. Type the following command to open the `sudo` PAM configuration file using the `vim` text editor:
-
-   ```shell
-   sudo vim /etc/pam.d/sudo
-   ```
-
+```bash
+sudo vim /etc/pam.d/sudo
+```
 3. Add the following line at the top of the file:
-
-   ```shell
-   auth sufficient pam_tid.so
-   ```
-
-   This line enables Touch ID authentication for `sudo` commands.
-
+```bash
+auth sufficient pam_tid.so
+```
+This line enables Touch ID authentication for `sudo` commands.
 4. If you use TMUX, you'll need to attach the PAM (Pluggable Authentication Module) to TMUX to ensure that the Touch ID integration works within TMUX sessions. To do this, follow these additional steps:
-
-   - Install `pam-reattach` using Homebrew by running the following command:
-
+    - Install `pam-reattach` using Homebrew by running the following command:
      ```shell
      brew install pam-reattach
      ```
-
-   - Open the `sudo` PAM configuration file again:
-
+    - Open the `sudo` PAM configuration file again:
      ```shell
      sudo vim /etc/pam.d/sudo
      ```
-
-   - Add the following line below the previous line:
-
+    - Add the following line below the previous line:
      ```shell
      auth optional /opt/homebrew/lib/pam/pam_reattach.so
      ```
-
-   These lines enable Touch ID support within TMUX sessions as well.
-
+These lines enable Touch ID support within TMUX sessions as well.
 5. Save the changes to the file.
-
 6. You might need to reboot your Mac or restart any open Terminal or TMUX sessions for the changes to take effect.
 
 Here's a convenient script that automates these steps for you:
