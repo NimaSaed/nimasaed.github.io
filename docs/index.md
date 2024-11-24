@@ -4,19 +4,24 @@ hide:
   - toc
 ---
 
-<img src="https://avatars.githubusercontent.com/u/10860598" alt="Avatar" style="display: block; margin-bottom: -10%; margin-left: auto; margin-right: 0px; width: 250px; border-radius:50%;opacity: 0.8;">
+<img src="https://avatars.githubusercontent.com/u/10860598" alt="Avatar" style="display: block; margin-bottom: -10%; margin-left: auto; margin-right: 0px; width: 250px; border-radius:50%;opacity: 0.9;">
 
 # Nima Saed
-## Ethical Hacker, Software Security Engineer, DevSecOps Engineer
 
-Nima is a skilled security consultant at [Xebia](https://xebia.com) in the Netherlands. They specialize in offering top-notch consultancy services for digital transformation.
+## Application Security Architect | Software Security Engineer <br> Ethical Hacker | DevSecOps Engineer | Cloud Security Engineer
 
-Nima has an impressive 19-year career in the IT industry, with a specialization in security for the last 13 years. Nima started as a software security engineer and worked as an ethical hacker.
+## Biography
 
-Nima is well-educated in security tech and cryptography, with expertise in software security, encryption, and digital signatures. He conducts effective penetration tests on software components, particularly those related to authentication and authorization.
+I am a seasoned security expert with 19 years of experience in IT, including 13 years specializing in software and cloud security. My expertise lies in securing critical systems, particularly in authentication, authorization, and cryptography. I excel at automating security processes and integrating them into modern software development lifecycles (SSDLC).
 
-Throughout Nima's career, he has worked across diverse sectors, including the medical, education, metal, and software industries. Each industry presents its unique set of privacy and security challenges. However, Nima's goal remains constant: introducing security processes as enablers rather than blockers. He firmly believes in the power of automation and simplicity, consistently incorporating these principles at the core of his approach.
+Over my career, I’ve collaborated across industries such as healthcare, education, manufacturing, and technology, addressing their unique privacy and security challenges. My approach centers on making security a seamless enabler for innovation by championing automation and simplicity.
 
-Nima is dedicated to guaranteeing your security and triumph in the digital realm. His extensive experience, profound knowledge, and unwavering commitment to excellence empower him to impact your company's security posture substantially.
+As a trainer and mentor, I am passionate about empowering teams to adopt secure development practices and strengthen their security postures. Whether through penetration testing, threat modeling, or building secure cloud infrastructures, my goal is to ensure businesses thrive in the digital age while staying secure.
 
-email: [nsaed@xebia.com](mailto:nsaed@xebia.com)
+## About Me
+
+My journey into cybersecurity started during my teenage years, sparked by a fascination with hacking and defense mechanisms. Friendly "Capture the Flag" competitions with friends fueled my curiosity about how systems operate—and how to secure them. This passion eventually became my career.
+
+To deepen my expertise, I pursued formal education in security technology and cryptography, learning to secure software and build robust systems. Along the way, I’ve developed a knack for tackling complex challenges and finding innovative solutions, both professionally and personally.
+
+In my free time, I’m an enthusiastic maker and tech tinkerer. I enjoy experimenting with electronics and microcontrollers, automating my home, and now, creating with 3D modeling and 3D printing. These hobbies give me a hands-on outlet for creativity and problem-solving, skills I bring to all aspects of my work.
