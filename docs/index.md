@@ -10,6 +10,9 @@ hide:
 
 ## Application Security Architect | Software Security Engineer <br> Ethical Hacker | DevSecOps Engineer | Cloud Security Engineer
 
+- nima [at] nmsd [dot] xyz
+- 00 31 six one four 61 two zero 95
+
 ## Biography
 
 I am a seasoned security expert with 19 years of experience in IT, including 13 years specializing in software and cloud security. My expertise lies in securing critical systems, particularly in authentication, authorization, and cryptography. I excel at automating security processes and integrating them into modern software development lifecycles (SSDLC).
