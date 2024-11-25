@@ -24,8 +24,8 @@ extra_css:
 markdown_extensions:
   - admonition
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons
@@ -49,15 +49,13 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/nimasaed/
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/nimasaed
     - icon: fontawesome/brands/mastodon
       link: https://mastodon.nl/@nima
     - icon: fontawesome/brands/github
       link: https://github.com/nimasaed
   generator: false
 
-copyright: Copyright &copy; 2019 - 2023 Nima Saed
+copyright: Copyright &copy; 2019 - 2024 Nima Saed
 
 # pages
 nav:
