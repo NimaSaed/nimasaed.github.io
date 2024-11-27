@@ -74,3 +74,6 @@ nav:
   - 'Notes':
     - 'Languages':
       - 'Bash Tips': 'notes/bash-tips.md'
+  - 'Talks':
+    - '2024':
+      - 'Authorization Engine': 'talks/authorization_engine.md'
