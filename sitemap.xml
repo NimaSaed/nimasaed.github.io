@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nmsd.xyz/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/resume/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/blog/AWS-Profile-changer/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/blog/Metasploit-Framework-console/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/blog/sudo-with-touch-id-on-Mac/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/notes/bash-tips/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/resume/education/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/resume/other/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/resume/professional_experience/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
     </url>
     <url>
          <loc>https://nmsd.xyz/talks/authorization_engine/</loc>
-         <lastmod>2024-11-27</lastmod>
+         <lastmod>2025-05-12</lastmod>
+    </url>
+    <url>
+         <loc>https://nmsd.xyz/talks/hot_plastic_cool_stuff/</loc>
+         <lastmod>2025-05-12</lastmod>
     </url>
 </urlset>
