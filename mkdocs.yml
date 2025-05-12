@@ -75,5 +75,7 @@ nav:
     - 'Languages':
       - 'Bash Tips': 'notes/bash-tips.md'
   - 'Talks':
+    - '2025':
+      - 'Hot Plastic, Cool Stuff' : 'talks/hot_plastic_cool_stuff.md'
     - '2024':
       - 'Authorization Engine': 'talks/authorization_engine.md'

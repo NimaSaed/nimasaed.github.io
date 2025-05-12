@@ -1,0 +1,103 @@
+Nima Saed
+
+Application Security Architect
+Software Security Engineer
+Ethical Hacker
+DevSecOps Engineer
+Cloud Security Engineer
+
+Biography
+
+I have experience helping to build critical components with development teams that involve authentication and authorization. With a background in cryptography, protocols such as SAML, OpenID, and OAuth are within my expertise. My particular interest is in automating security in software development, including integrating static application security tests into build processes and dynamic application security tests into production environments for monitoring purposes. Additionally, my focus includes cloud security. Based on my background as a trainer, I am equipped with the skills to effectively train and mentor team-mates and colleagues on a wide range of security topics, including secure software development and cloud security.
+
+About me
+
+During my teenage years, I became fascinated with security and hacking, particularly in the realm of social engineering. It all began when I played 'Capture the Flag' with my friends, and I started to learn how to penetrate systems. However, I also learned how to defend against attacks, which was just as important. My passion for security and hacking grew, and I decided to pursue it as a career. To further my knowledge, I traveled to Malaysia to study security and improve my skills. Additionally, I have a strong interest in electronics and microcontrollers. Whenever I have the chance, I enjoy creating projects using Arduino.
+
+Education
+
+2014
+Security Technology
+Multimedia University, Malaysia
+
+2016
+Cryptography
+Multimedia University, Malaysia
+
+Software Security Engineer
+
+Nima helps organizations to discover potential security issues during the design phase.
+Ethical Hacker
+Nima has experience in performing penetration tests to discover security vulnerabilities in applications and misconfigurations in services.
+
+DevSecOps Engineer
+
+Nima automates your security processes and integrates them with your SSDLC, including security monitoring in your production environment.
+
+Trainer
+
+Nima was Xebia’s leading trainer for 'Applied Cloud Security for AWS' and 'Secure Coding'  learning journey
+
+Awards
+
+ECA MMU CHAPTER AWARD FOR SECURITY TECHNOLOGY, from EC-Council, Convocation 2014
+
+Competences
+
+Secure Architecture and Design, Training, Penetration Testing, Social Engineering, Threat Modelling, Security Test Automation, Secure Software Development, Secure CI/CD environments, SSDLC, Cloud security
+
+
+Languages
+
+English (Fluently), Persian (Native), Kurdish (Intermediate), Chinese (Beginner), Dutch (Beginner)
+
+Hobbies
+
+Linux Ricing, Electronics, Smart Home and Home Automation, 3D design and 3D printing
+
+
+Experiences
+
+ANVA - May 2024 - Present
+
+Security Architect
+Designing and implementing secure architecture for new SaaS product
+  - Authentication and Authorization
+  - Secure Software Development
+  - Secure CI/CD environment
+  - Secure Cloud
+
+Nima plays a pivotal role in ensuring the security of the SaaS product, including:
+  - Designing modern authorization engine which is necessary to grantee data security in Saas product.
+
+
+Xebia Security Nov 2021 - April 2024
+
+Nima has extensive experience across diverse client assignments, including:
+Automating security checks into CICD pipelines
+Performing AWS Cloud security assessments
+Enhancing AWS infra security posture
+Penetration tests
+Secure code reviews
+Threat modeling of application designs
+Training clients on AWS security, application security, and DevSecOps practices.
+
+His expertise encompasses automating security checks, conducting cloud security assessments, improving infrastructure security, performing penetration tests, reviewing secure code, threat modeling application designs, and providing comprehensive training. Nima's diverse skill set enables clients to strengthen their security measures effectively.
+
+247TailorSteel –  Dec 2019 - Okt 2021
+
+Nima played a crucial role in enhancing security measures at his organization. He seamlessly integrated API security scans into the development teams' building processes, bolstering the overall security posture of the systems. Additionally, Nima guided the security design of an authentication and authorization platform for the customers' portal, ensuring secure access and safeguarding sensitive information.
+
+In another impactful initiative, Nima actively contributed to OT security at 247TailorSteel. Recognizing the importance of protecting critical infrastructure, he implemented automated network vulnerability scans, effectively identifying vulnerable nodes on the factory floors. This proactive approach helped mitigate potential risks and ensured a secure operating environment.
+
+Quintiq, a Dassault Systèmes company – Sep 2016 - Dec 2019
+
+Nima, as a member of the R&D team, played a pivotal role in ensuring robust security measures. He conducted thorough penetration tests on in-house software and services, proactively introducing a shift to the left in the Software Development Lifecycle to address vulnerabilities at the design phase. By integrating security requirements into the automated tests of the software quality department, Nima bolstered the overall security posture of the organization.
+
+Notably, Nima earned a reputation for his exceptional skills when he successfully hacked the SAML authentication developed by the R&D team for a high-profile customer just hours before its planned release to production. This significant accomplishment showcased his expertise in identifying and addressing critical vulnerabilities, preventing potential security breaches.
+Malaysia Multimedia University – Sep 2014 - Aug 2016
+
+Nima's academic journey included valuable contributions as a research assistant and tutor within the cryptography research group. His focus primarily revolved around in-depth research in identity-based cryptography, signcryption, and searchable encryption, exploring innovative approaches to enhance security and privacy.
+In his role as a tutor, Nima demonstrated his expertise by providing guidance and support to undergraduate students. His proficiency extended to assisting students with data structures in C++ and web technologies, equipping them with the necessary skills to excel in their studies and future endeavors.
+Nima's dual role as a researcher and tutor showcases his commitment to both advancing the field of cryptography and nurturing the next generation of professionals. His passion for knowledge sharing and mentoring highlights his dedication to empowering others and fostering a collaborative learning environment.
+
