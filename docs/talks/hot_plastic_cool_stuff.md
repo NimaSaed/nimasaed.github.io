@@ -9,7 +9,9 @@ classoption: aspectratio=169
 
 # Agenda
 
+::: columns
 
+:::: column
 1. Intro
 1. Types of Home 3D Printers
 1. Finding Models to Print
@@ -17,6 +19,14 @@ classoption: aspectratio=169
 1. Common Problems & Troubleshooting
 1. Live Demo – Let’s print something!
 1. Q&A
+
+::::
+
+:::: column
+![qrcode](../images/hot_plastic_cool_stuff_qrcode.png)
+::::
+
+:::
 
 
 # Intro
@@ -37,7 +47,7 @@ classoption: aspectratio=169
 
 ## Fused Deposition Modeling (FDM)
 
-- Materials: PLA, PETG, ABS, PC, mixes with carbon fiber and glass fiber.
+- Materials: PLA, PETG, TPU, ABS, PC, mixes with carbon fiber and glass fiber.
 
 Pros:
 
