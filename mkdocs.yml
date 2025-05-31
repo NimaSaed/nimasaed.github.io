@@ -72,6 +72,11 @@ nav:
     - '2019':
       - 'MSF on Docker': 'blog/Metasploit-Framework-console.md'
   - 'Notes':
+    - 'Secure Homelab':
+      - 'Reverse Proxy (Traefik)': 'notes/traefik.md'
+      - 'Podman and Systemd': 'notes/podman-systemd.md'
+      - 'Authentication': 'notes/authelia.md'
+      - 'Homepage': 'notes/homepage.md'
     - 'Languages':
       - 'Bash Tips': 'notes/bash-tips.md'
   - 'Talks':
