@@ -10,13 +10,13 @@
         <meta name="author" content="Nima Saed">
       
       
-        <link rel="canonical" href="https://nmsd.xyz/blog/Metasploit-Framework-console/">
+        <link rel="canonical" href="https://nmsd.xyz/notes/homepage/">
       
       
-        <link rel="prev" href="../AWS-Profile-changer/">
+        <link rel="prev" href="../authelia/">
       
       
-        <link rel="next" href="../../notes/traefik/">
+        <link rel="next" href="../bash-tips/">
       
       
       <link rel="icon" href="../../favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>MSF on Docker - nmsd.xyz</title>
+        <title>Homepage - nmsd.xyz</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metasploit-framework-console-on-docker-with-workspace" class="md-skip">
+        <a href="#deploy-homepage-using-rootless-podman" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MSF on Docker
+              Homepage
             
           </span>
         </div>
@@ -218,8 +218,6 @@
   
   
   
-    
-  
   
     
     
@@ -227,13 +225,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../sudo-with-touch-id-on-Mac/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../blog/sudo-with-touch-id-on-Mac/" class="md-tabs__link">
           
   
   
@@ -254,6 +250,8 @@
   
   
   
+    
+  
   
     
     
@@ -261,11 +259,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../notes/traefik/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../traefik/" class="md-tabs__link">
           
   
   
@@ -504,10 +504,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -521,20 +519,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -547,7 +542,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -606,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sudo-with-touch-id-on-Mac/" class="md-nav__link">
+      <a href="../../blog/sudo-with-touch-id-on-Mac/" class="md-nav__link">
         
   
   
@@ -682,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../AWS-Profile-changer/" class="md-nav__link">
+      <a href="../../blog/AWS-Profile-changer/" class="md-nav__link">
         
   
   
@@ -710,8 +705,6 @@
                 
   
   
-    
-  
   
   
     
@@ -726,11 +719,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -746,7 +739,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             2019
@@ -757,32 +750,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    MSF on Docker
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../blog/Metasploit-Framework-console/" class="md-nav__link">
         
   
   
@@ -793,104 +764,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#containers-are-everywhere-in-my-life" class="md-nav__link">
-    <span class="md-ellipsis">
-      Containers are everywhere in my life
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msf-console-on-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      MSF Console on Docker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    <span class="md-ellipsis">
-      Network
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msf" class="md-nav__link">
-    <span class="md-ellipsis">
-      MSF
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MSF">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#save-database-setting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Save database setting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msf-function-in-bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      MSF function in .bashrc
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -915,8 +788,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -928,17 +803,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -951,7 +829,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Notes
@@ -962,8 +840,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -982,11 +862,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -1002,7 +882,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Secure Homelab
@@ -1016,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/traefik/" class="md-nav__link">
+      <a href="../traefik/" class="md-nav__link">
         
   
   
@@ -1039,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/podman-systemd/" class="md-nav__link">
+      <a href="../podman-systemd/" class="md-nav__link">
         
   
   
@@ -1062,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/authelia/" class="md-nav__link">
+      <a href="../authelia/" class="md-nav__link">
         
   
   
@@ -1082,10 +962,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../notes/homepage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1096,6 +985,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1161,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/bash-tips/" class="md-nav__link">
+      <a href="../bash-tips/" class="md-nav__link">
         
   
   
@@ -1421,92 +1311,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#containers-are-everywhere-in-my-life" class="md-nav__link">
-    <span class="md-ellipsis">
-      Containers are everywhere in my life
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msf-console-on-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      MSF Console on Docker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    <span class="md-ellipsis">
-      Network
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msf" class="md-nav__link">
-    <span class="md-ellipsis">
-      MSF
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MSF">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#save-database-setting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Save database setting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msf-function-in-bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      MSF function in .bashrc
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1521,53 +1325,24 @@
 
 
 
-<h1 id="metasploit-framework-console-on-docker-with-workspace">Metasploit Framework console on Docker. (with workspace)</h1>
-<p>Sep 20, 2019</p>
-<p><img alt="metasploit" src="../../images/merasploit.png" /></p>
-<h2 id="summary">Summary</h2>
-<p>I am a security specialist. I love Linux and containers. I would not say I like Kali Linux and bloated software. I use Metasploit Framework on Docker with workspace. Although you can start using the MSF docker out of the box, you need a database for using the workspace. Here is how.</p>
-<h2 id="containers-are-everywhere-in-my-life">Containers are everywhere in my life</h2>
-<p>Over the past few years, I started to like Docker and containerization in general. Before that, I had some resistance against containerization. Compared to VM, I saw VMs more secure and isolated. But now I have a different opinion. Although some of the security concerns about containers are true, at least for now, the benefits of containers are more appealing to me now.
-I have started using Docker wherever I can in my job or even personal life. I use Docker to build my automated security testing platform at work, and I use them to integrate my security testing tools. I run my services such as OpenVPN and Plex on Docker at home. They are everywhere in my life.</p>
-<p>I would not say I like to use Kali Linux because of 1. I am not particularly eager to run VM all the time. 2. Kali Linux is bloated. 3. There are so many tools that I don’t even use. Instead, I use Arch Linux as my daily driver with a minimum number of packages installed. I use the Blackarch strap on my Arch Linux to get security tools or build the tools on Docker.
-One of the tools that I use is Metasploit Framework, and thanks to the Rapid7 team, there is a docker for MSF, which is getting updates every day or even sometimes twice a day. Although you can start using the MSF docker out of the box, you need a database for using the workspace.</p>
-<h2 id="msf-console-on-docker">MSF Console on Docker</h2>
-<p>You need <a href="https://hub.docker.com/r/metasploitframework/metasploit-framework">MSF</a> and <a href="https://hub.docker.com/_/postgres">Postgres</a> docker. You also need to set up a docker network.
-First, create a directory in your home directory for MSF files. You also need a directory to keep Postgres data. Let’s keep it in the same place with MSF files.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span><span class="nv">$HOME</span>/.msf4
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mkdir<span class="w"> </span><span class="nv">$HOME</span>/.msf4/database
+<h1 id="deploy-homepage-using-rootless-podman">Deploy <a href="https://gethomepage.dev/">homepage</a> using rootless podman</h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>podman<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--detach<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--label<span class="w"> </span><span class="s2">&quot;io.containers.autoupdate=registry&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.enable=true&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--label<span class="w"> </span>traefik.http.routers.homepage.rule<span class="o">=</span><span class="s1">&#39;Host(`home.example.com`)&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.homepage.entrypoints=websecure&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.homepage.tls.certresolver=namecheap&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.homepage.service=homepage&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.homepage.loadbalancer.server.scheme=http&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.homepage.loadbalancer.server.port=3000&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.homepage.middlewares=authelia@docker&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>--name<span class="w"> </span>homepage<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>--pod<span class="w">  </span>tools<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>--env<span class="w"> </span><span class="nv">HOMEPAGE_ALLOWED_HOSTS</span><span class="o">=</span>home.example.com<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>--volume<span class="w"> </span><span class="nv">$HOME</span>/homepage:/app/config:z<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>ghcr.io/gethomepage/homepage:latest
 </code></pre></div>
-<h2 id="network">Network</h2>
-<p>You need a docker network to assign a fixed IP to each container. Let’s create a network with a subnet of 172.18.0.0/16, and we call it msf.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>--subnet<span class="o">=</span><span class="m">172</span>.18.0.0/16<span class="w"> </span>msf
-</code></pre></div>
-<h2 id="database">Database</h2>
-<p>Now we need the database. Here we are going to use Postgres 11 with alpine based os. Let’s assign it to network msf and give IP 172.18.0.2. You need to mount a volume to keep the data, and you also need to set the value to Postgres’s username, password and database name.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--ip<span class="w"> </span><span class="m">172</span>.18.0.2<span class="w"> </span>--network<span class="w"> </span>msf<span class="w"> </span>--rm<span class="w"> </span>--name<span class="w"> </span>postgres<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.msf4/database:/var/lib/postgresql/data&quot;</span><span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>postgres<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_USER</span><span class="o">=</span>postgres<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_DB</span><span class="o">=</span>msf<span class="w"> </span>-d<span class="w"> </span>postgres:11-alpine
-</code></pre></div>
-<h2 id="msf">MSF</h2>
-<p>Now we can run MSF on Docker, but we need to set database URL (including username, password, and database name in URL) for the first time. You also need to mount the volume to save the data. Lastly, you need to map the range of ports that MSF will use.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>--network<span class="w"> </span>msf<span class="w"> </span>--name<span class="w"> </span>msf<span class="w"> </span>--ip<span class="w"> </span><span class="m">172</span>.18.0.3<span class="w"> </span>-e<span class="w"> </span><span class="nv">DATABASE_URL</span><span class="o">=</span><span class="s1">&#39;postgres://postgres:postgres@172.18.0.2:5432/msf&#39;</span><span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.msf4:/home/msf/.msf4&quot;</span><span class="w"> </span>-p<span class="w"> </span><span class="m">8443</span>-8500:8443-8500<span class="w"> </span>metasploitframework/metasploit-framework
-</code></pre></div>
-<h3 id="save-database-setting">Save database setting</h3>
-<p>You can save the database setting in MSF. To do so, inside the MSF console, execute db_save. Now you can run MSF docker without setting database URL.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>-u<span class="w"> </span><span class="m">0</span><span class="w"> </span>--network<span class="w"> </span>msf<span class="w"> </span>--name<span class="w"> </span>msf<span class="w"> </span>--ip<span class="w"> </span><span class="m">172</span>.18.0.3<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.msf4:/home/msf/.msf4&quot;</span><span class="w"> </span>-p<span class="w"> </span><span class="m">8443</span>-8500:8443-8500<span class="w"> </span>metasploitframework/metasploit-framework
-</code></pre></div>
-<h2 id="msf-function-in-bashrc">MSF function in .bashrc</h2>
-<p>If you are using Linux, you can also use the below function in your bashrc. First, it will check if the msf network exists; if not, it will create the network. Then it will check if Postgres docker is running; if not, it will start the Postgres docker. Lastly, it will start the MSF docker.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">function</span><span class="w"> </span>msf-docker<span class="o">()</span><span class="w"> </span><span class="o">{</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>docker<span class="w"> </span>network<span class="w"> </span>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-w<span class="w"> </span>msf<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w"> </span><span class="k">then</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w"> </span>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>--subnet<span class="o">=</span><span class="m">172</span>.18.0.0/16<span class="w"> </span>msf
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w"> </span><span class="k">fi</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-w<span class="w"> </span>postgres<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w"> </span><span class="k">then</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>--ip<span class="w"> </span><span class="m">172</span>.18.0.2<span class="w"> </span>--network<span class="w"> </span>msf<span class="w"> </span>--rm<span class="w"> </span>--name<span class="w"> </span>postgres<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.msf4/database:/var/lib/postgresql/data&quot;</span><span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>postgres<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_USER</span><span class="o">=</span>postgres<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_DB</span><span class="o">=</span>msf<span class="w"> </span>-d<span class="w"> </span>postgres:11-alpine
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w"> </span><span class="k">fi</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>-u<span class="w"> </span><span class="m">0</span><span class="w"> </span>--network<span class="w"> </span>msf<span class="w"> </span>--name<span class="w"> </span>msf<span class="w"> </span>--ip<span class="w"> </span><span class="m">172</span>.18.0.3<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.msf4:/home/msf/.msf4&quot;</span><span class="w"> </span>-p<span class="w"> </span><span class="m">8443</span>-8500:8443-8500<span class="w"> </span>metasploitframework/metasploit-framework
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="o">}</span>
-</code></pre></div>
-<p>If you need help with any of these, drop me a message.</p>
 
 
 
