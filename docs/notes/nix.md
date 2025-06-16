@@ -21,6 +21,11 @@ nix flake init -t nix-darwin --extra-experimental-features "nix-command flakes"
 ```bash
 sudo nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake .config/nix#mac
 ```
+### rebuild
+
+```bash
+sudo darwin-rebuild switch --flake ~/.config/nix#mac
+```
 
 ## nix-darwin flake
 
