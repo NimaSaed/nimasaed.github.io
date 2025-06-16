@@ -77,6 +77,7 @@ nav:
       - 'Podman and Systemd': 'notes/podman-systemd.md'
       - 'Authentication': 'notes/authelia.md'
       - 'Homepage': 'notes/homepage.md'
+    - 'Nix': 'notes/nix.md'
     - 'Languages':
       - 'Bash Tips': 'notes/bash-tips.md'
   - 'Talks':
