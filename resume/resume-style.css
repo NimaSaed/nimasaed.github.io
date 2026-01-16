@@ -1,0 +1,312 @@
+/* Resume Stylesheet - Clean & Professional */
+
+:root {
+    --primary: #1a365d;
+    --accent: #2b6cb0;
+    --text: #2d3748;
+    --text-light: #718096;
+    --border: #e2e8f0;
+    --bg-light: #f7fafc;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    background: var(--white);
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* Header - Name */
+h1#nima-saed {
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Hide the duplicate title from pandoc */
+header#title-block-header {
+    display: none;
+}
+
+/* Tagline under name */
+h1#nima-saed + p {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact list */
+h1#nima-saed + p + ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+h1#nima-saed + p + ul li {
+    font-size: 0.95rem;
+}
+
+h1#nima-saed + p + ul li a {
+    color: var(--text);
+}
+
+h1#nima-saed + p + ul li a:hover {
+    color: var(--accent);
+}
+
+/* Section Headers (h1) */
+h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+    font-weight: 600;
+}
+
+/* Subsection Headers (h2) - Company names */
+h2 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Skills subsections (h3) */
+h3 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 0.8rem;
+}
+
+/* Job titles - bold paragraphs after h2 */
+h2 + p strong {
+    color: var(--text-light);
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Key Achievement/Focus styling */
+p strong:first-child {
+    color: var(--primary);
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* Nested lists (for awards) */
+li > ul {
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+li > ul li {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Images (video thumbnails) */
+p img {
+    max-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+p img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Publications */
+#publications + p + ol {
+    counter-reset: publication;
+    list-style: none;
+    padding-left: 0;
+}
+
+#publications + p + ol li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+#publications + p + ol li::before {
+    content: counter(publication) ".";
+    counter-increment: publication;
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+#publications + p + ol li em {
+    color: var(--text-light);
+}
+
+/* Skills & Technologies sections */
+#skills-competences + h3,
+#technologies + h3 {
+    margin-top: 1rem;
+}
+
+#skills-competences + h3 + ul,
+#technologies + h3 + p {
+    margin-bottom: 0.5rem;
+}
+
+/* Technology lists as inline */
+#technologies h3 + p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    background: var(--bg-light);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid var(--accent);
+}
+
+/* Languages section - inline */
+#languages + ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Hobbies section - inline */
+#hobbies + ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#hobbies + ul li::before {
+    content: "•";
+    color: var(--accent);
+    margin-right: 8px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        padding: 0;
+        font-size: 11pt;
+        max-width: 100%;
+    }
+
+    h1 { font-size: 18pt; }
+    h2 { font-size: 13pt; }
+    h3 { font-size: 11pt; }
+
+    h1, h2 {
+        page-break-after: avoid;
+    }
+
+    .experience-item, li {
+        page-break-inside: avoid;
+    }
+
+    p img {
+        max-width: 150px;
+    }
+
+    a {
+        color: var(--text);
+    }
+
+    #technologies h3 + p {
+        background: none;
+        padding: 0;
+        border: none;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 30px 20px;
+        font-size: 15px;
+    }
+
+    h1#nima-saed {
+        font-size: 2rem;
+    }
+
+    h1#nima-saed + p + ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    #languages + ul,
+    #hobbies + ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
