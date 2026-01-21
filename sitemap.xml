@@ -29,7 +29,27 @@
          <lastmod>1980-01-01</lastmod>
     </url>
     <url>
+         <loc>https://nmsd.xyz/notes/changedetection/</loc>
+         <lastmod>1980-01-01</lastmod>
+    </url>
+    <url>
          <loc>https://nmsd.xyz/notes/homepage/</loc>
+         <lastmod>1980-01-01</lastmod>
+    </url>
+    <url>
+         <loc>https://nmsd.xyz/notes/jellyfin/</loc>
+         <lastmod>1980-01-01</lastmod>
+    </url>
+    <url>
+         <loc>https://nmsd.xyz/notes/lldap/</loc>
+         <lastmod>1980-01-01</lastmod>
+    </url>
+    <url>
+         <loc>https://nmsd.xyz/notes/media/</loc>
+         <lastmod>1980-01-01</lastmod>
+    </url>
+    <url>
+         <loc>https://nmsd.xyz/notes/nextcloud/</loc>
          <lastmod>1980-01-01</lastmod>
     </url>
     <url>
@@ -38,6 +58,10 @@
     </url>
     <url>
          <loc>https://nmsd.xyz/notes/podman-systemd/</loc>
+         <lastmod>1980-01-01</lastmod>
+    </url>
+    <url>
+         <loc>https://nmsd.xyz/notes/podman-template/</loc>
          <lastmod>1980-01-01</lastmod>
     </url>
     <url>

@@ -10,13 +10,9 @@
         <meta name="author" content="Nima Saed">
       
       
-        <link rel="canonical" href="https://nmsd.xyz/notes/authelia/">
+        <link rel="canonical" href="https://nmsd.xyz/notes/nextcloud/">
       
       
-        <link rel="prev" href="../podman-systemd/">
-      
-      
-        <link rel="next" href="../homepage/">
       
       
         
@@ -27,7 +23,7 @@
     
     
       
-        <title>Authentication - nmsd.xyz</title>
+        <title>How to run nextcloud in podman - nmsd.xyz</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authelia-deployment-with-rootless-podman-and-traefik" class="md-skip">
+        <a href="#how-to-run-nextcloud-in-podman" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authentication
+              How to run nextcloud in podman
             
           </span>
         </div>
@@ -249,8 +245,6 @@
   
   
   
-    
-  
   
     
     
@@ -258,12 +252,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../traefik/" class="md-tabs__link">
           
   
@@ -745,10 +737,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -762,20 +752,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -793,7 +780,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -808,10 +795,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -830,11 +815,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -855,7 +840,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -926,37 +911,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Authentication
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../authelia/" class="md-nav__link">
         
   
   
@@ -972,103 +930,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#to-create-pod" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To create Pod
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-create-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To create secret
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-replace-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To replace secret
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-create-container-in-a-pod" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To create Container in a Pod
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-test-the-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To test the authentication
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#users-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Users database
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1508,10 +1369,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-create-pod" class="md-nav__link">
+  <a href="#set-secrets-for-nextcloud-database" class="md-nav__link">
     <span class="md-ellipsis">
       
-        To create Pod
+        Set secrets for nextcloud database
       
     </span>
   </a>
@@ -1519,65 +1380,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-create-secret" class="md-nav__link">
+  <a href="#to-run-the-mariadb-container" class="md-nav__link">
     <span class="md-ellipsis">
       
-        To create secret
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-replace-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To replace secret
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-create-container-in-a-pod" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To create Container in a Pod
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-test-the-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To test the authentication
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#users-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Users database
+        To run the mariadb container
       
     </span>
   </a>
@@ -1601,133 +1407,120 @@
 
 
 
-<h1 id="authelia-deployment-with-rootless-podman-and-traefik"><strong>Authelia Deployment with Rootless Podman and Traefik</strong></h1>
-<p>This guide provides step-by-step instructions for deploying <strong>Authelia</strong> in a <strong>Podman</strong> pod with <strong>Traefik</strong> as the reverse proxy for authentication, including secure secret management and basic access control.</p>
-<ul>
-<li><strong>Pod Creation</strong>: Creates a Podman pod named <code>auth</code> exposing port <code>9091</code> and attached to the <code>reverse_proxy</code> network.</li>
-<li><strong>Secret Management</strong>: Uses <code>podman secret</code> to create and manage secrets for JWT, session, and storage encryption.</li>
-<li><strong>Authelia Deployment</strong>: Runs Authelia in the pod with required secrets, environment variables, and Traefik labels for routing and forward authentication.</li>
-<li><strong>Authentication Test</strong>: Deploys a <code>whoami</code> test container to validate the Authelia setup using Traefik middleware.</li>
-<li><strong>Configuration</strong>: YAML configuration for access control (bypass, one-factor, two-factor) and session cookie policies.</li>
-<li><strong>User Database</strong>: Defines users and groups using Argon2id hashed passwords for secure authentication.</li>
-</ul>
-<h2 id="to-create-pod">To create Pod</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>podman<span class="w"> </span>pod<span class="w"> </span><span class="se">\</span>
+<h1 id="how-to-run-nextcloud-in-podman">How to run nextcloud in podman</h1>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>podman<span class="w"> </span>pod<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>create<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--name<span class="w"> </span>auth<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--publish<span class="w"> </span><span class="m">9091</span>:9091/tcp<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--network<span class="w"> </span>reverse_proxy
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--network<span class="w"> </span>slirp4netns:port_handler<span class="o">=</span>slirp4netns<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--hostname<span class="w"> </span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--name<span class="w"> </span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>-p<span class="w"> </span><span class="m">5080</span>:80/tcp<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>-p<span class="w"> </span><span class="m">9980</span>:9980/tcp
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">#--dns 10.10.10.2</span>
 </code></pre></div>
-<h2 id="to-create-secret">To create secret</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;myjwtsecret&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>podman<span class="w"> </span>secret<span class="w"> </span>create<span class="w"> </span>authelia_jwt_secret<span class="w"> </span>-
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;mysessionsecret&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>podman<span class="w"> </span>secret<span class="w"> </span>create<span class="w"> </span>authelia_session_secret<span class="w"> </span>-
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;mystorageenckey&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>podman<span class="w"> </span>secret<span class="w"> </span>create<span class="w"> </span>authelia_storage_encryption_key<span class="w"> </span>-
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>podman<span class="w"> </span>pod<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>--name<span class="w"> </span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>--network<span class="w"> </span>reverse_proxy
+</code></pre></div></p>
+<h2 id="set-secrets-for-nextcloud-database">Set secrets for nextcloud database</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>op<span class="w"> </span><span class="nb">read</span><span class="w"> </span><span class="s2">&quot;op://Private/Server NextCloud/Datadase/NextCloud_MYSQL_ROOT_PASSWORD&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>ssh<span class="w"> </span>musky@10.10.10.2<span class="w"> </span><span class="s2">&quot;podman secret create NextCloud_MYSQL_ROOT_PASSWORD -&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>op<span class="w"> </span><span class="nb">read</span><span class="w"> </span><span class="s2">&quot;op://Private/Server NextCloud/Datadase/NextCloud_MYSQL_PASSWORD&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>ssh<span class="w"> </span>musky@10.10.10.2<span class="w"> </span><span class="s2">&quot;podman secret create NextCloud_MYSQL_PASSWORD -&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># to replace the secret</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>op<span class="w"> </span><span class="nb">read</span><span class="w"> </span><span class="s2">&quot;op://Private/Server NextCloud/Datadase/NextCloud_MYSQL_PASSWORD&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>ssh<span class="w"> </span>musky@10.10.10.2<span class="w"> </span><span class="s2">&quot;podman secret create --replace NextCloud_MYSQL_PASSWORD -&quot;</span>
 </code></pre></div>
-<h2 id="to-replace-secret">To replace secret</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;new&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>podman<span class="w"> </span>secret<span class="w"> </span>create<span class="w"> </span>--replace<span class="w"> </span>secret_name<span class="w"> </span>-
-</code></pre></div>
-<h2 id="to-create-container-in-a-pod">To create Container in a Pod</h2>
+<h2 id="to-run-the-mariadb-container">To run the mariadb container</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>podman<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--detach<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>--label<span class="w"> </span><span class="s2">&quot;io.containers.autoupdate=registry&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.enable=true&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>--label<span class="w"> </span>traefik.http.routers.authelia.rule<span class="o">=</span><span class="s1">&#39;host(`auth.example.com`)&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.authelia.entrypoints=websecure&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.authelia.tls.certresolver=namecheap&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.authelia.service=authelia&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.authelia.loadbalancer.server.scheme=http&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.authelia.loadbalancer.server.port=9091&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.middlewares.authelia.forwardauth.address=http://host.docker.internal:9091/api/authz/forward-auth&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.middlewares.authelia.forwardauth.trustforwardheader=true&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.middlewares.authelia.forwardauth.authresponseheaders=remote-user,remote-groups,remote-email,remote-name&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>--name<span class="w"> </span>authelia<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>--pod<span class="w">  </span>auth<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>--restart<span class="w"> </span>always<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>--env<span class="w"> </span><span class="nv">tz</span><span class="o">=</span>europe/amsterdam<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_SERVER_ADDRESS</span><span class="o">=</span><span class="s1">&#39;tcp://:9091&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_LOG_LEVEL</span><span class="o">=</span>warn<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_TOTP_ISSUER</span><span class="o">=</span><span class="s1">&#39;auth.example.com&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_AUTHENTICATION_BACKEND_FILE_PATH</span><span class="o">=</span><span class="s1">&#39;/config/users_database.yml&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_ACCESS_CONTROL_DEFAULT_POLICY</span><span class="o">=</span><span class="s1">&#39;deny&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_REGULATION_MAX_RETRIES</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_REGULATION_FIND_TIME</span><span class="o">=</span><span class="s2">&quot;2 minutes&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_REGULATION_BAN_TIME</span><span class="o">=</span><span class="s2">&quot;5 minutes&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_STORAGE_LOCAL_PATH</span><span class="o">=</span><span class="s2">&quot;/config/db.sqlite3&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>--env<span class="w"> </span><span class="nv">AUTHELIA_NOTIFIER_FILESYSTEM_FILENAME</span><span class="o">=</span><span class="s2">&quot;/config/notification.txt&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>--secret<span class="w"> </span>authelia_jwt_secret,type<span class="o">=</span>env,target<span class="o">=</span>AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>--secret<span class="w"> </span>authelia_session_secret,type<span class="o">=</span>env,target<span class="o">=</span>AUTHELIA_SESSION_SECRET<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>--secret<span class="w"> </span>authelia_storage_encryption_key,type<span class="o">=</span>env,target<span class="o">=</span>AUTHELIA_STORAGE_ENCRYPTION_KEY<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>--volume<span class="w"> </span><span class="nv">$HOME</span>/authelia:/config:z<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>ghcr.io/authelia/authelia:latest
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>--name<span class="w"> </span>nextcloud-db<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>--pod<span class="w"> </span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>--env<span class="w"> </span><span class="nv">MYSQL_DATABASE</span><span class="o">=</span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>--env<span class="w"> </span><span class="nv">MYSQL_USER</span><span class="o">=</span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>--secret<span class="w"> </span>NextCloud_MYSQL_PASSWORD,type<span class="o">=</span>env,target<span class="o">=</span>MYSQL_PASSWORD<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>--secret<span class="w"> </span>NextCloud_MYSQL_ROOT_PASSWORD,type<span class="o">=</span>env,target<span class="o">=</span>MYSQL_ROOT_PASSWORD<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>--volume<span class="w"> </span>nextcloud_db:/var/lib/mysql/<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>--restart<span class="w"> </span>always<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>docker.io/library/mariadb:10.11<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>--transaction-isolation<span class="o">=</span>READ-COMMITTED<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>--log-bin<span class="o">=</span>binlog<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>--binlog-format<span class="o">=</span>ROW
 </code></pre></div>
-<h2 id="to-test-the-authentication">To test the authentication</h2>
+<h1 id="redis">redis</h1>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>podman<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>--detach<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>--label<span class="w"> </span><span class="s2">&quot;io.containers.autoupdate=registry&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.enable=true&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>--label<span class="w"> </span>traefik.http.routers.whoami.rule<span class="o">=</span><span class="s1">&#39;Host(`whoami.example.com`)&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.whoami.entrypoints=websecure&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.whoami.tls.certresolver=namecheap&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.whoami.service=whoami&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.whoami.loadbalancer.server.scheme=http&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.whoami.loadbalancer.server.port=80&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.whoami.middlewares=authelia@docker&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>--network<span class="w"> </span>reverse_proxy<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>--name<span class="w"> </span>whoami<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>docker.io/library/nginx
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>--name<span class="w"> </span>nextcloud-redis<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>--pod<span class="w"> </span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>--restart<span class="w"> </span>always<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>docker.io/library/redis:alpine
 </code></pre></div>
-<h2 id="configuration-file">Configuration file</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nn">---</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">access_control</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">rules</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">domain</span><span class="p">:</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;public.example.com&#39;</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">      </span><span class="nt">policy</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;bypass&#39;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">domain</span><span class="p">:</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;subdomain1.example.com&#39;</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;subdomain2.example.com&#39;</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">      </span><span class="nt">policy</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;one_factor&#39;</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">domain</span><span class="p">:</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;secure.example.com&#39;</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">      </span><span class="nt">policy</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;two_factor&#39;</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="nt">session</span><span class="p">:</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">  </span><span class="c1"># session secret is in env</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">  </span><span class="nt">cookies</span><span class="p">:</span>
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;authelia_session&#39;</span>
-<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">      </span><span class="nt">domain</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;example.com&#39;</span><span class="w">  </span><span class="c1"># Should match whatever your root protected domain is</span>
-<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">      </span><span class="nt">authelia_url</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;https://auth.example.com&#39;</span>
-<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">      </span><span class="nt">expiration</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;1</span><span class="nv"> </span><span class="s">hour&#39;</span><span class="w">  </span><span class="c1"># 1 hour</span>
-<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">      </span><span class="nt">inactivity</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;5</span><span class="nv"> </span><span class="s">minutes&#39;</span><span class="w">  </span><span class="c1"># 5 minutes</span>
-<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">      </span><span class="nt">default_redirection_url</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;https://home.example.com&#39;</span>
-<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="nn">...</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>podman<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>--detach<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>--label<span class="w"> </span><span class="s2">&quot;io.containers.autoupdate=registry&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.enable=true&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>--label<span class="w"> </span>traefik.http.routers.cloud.rule<span class="o">=</span><span class="s1">&#39;Host(`cloud.nmsd.xyz`)&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.cloud.entrypoints=websecure&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.cloud.tls.certresolver=namecheap&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.routers.cloud.service=cloud&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.cloud.loadbalancer.server.scheme=http&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>--label<span class="w"> </span><span class="s2">&quot;traefik.http.services.cloud.loadbalancer.server.port=80&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>--secret<span class="w"> </span>NextCloud_MYSQL_PASSWORD,type<span class="o">=</span>env,target<span class="o">=</span>MYSQL_PASSWORD<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>--env<span class="w"> </span><span class="nv">REDIS_HOST</span><span class="o">=</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>--env<span class="w"> </span><span class="nv">MYSQL_HOST</span><span class="o">=</span><span class="m">127</span>.0.0.1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>--env<span class="w"> </span><span class="nv">MYSQL_DATABASE</span><span class="o">=</span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>--env<span class="w"> </span><span class="nv">MYSQL_USER</span><span class="o">=</span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>--volume<span class="w"> </span>nextcloud_html:/var/www/html/<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>--volume<span class="w"> </span>nextcloud_data:/var/www/html/data<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>--pod<span class="w"> </span>nextcloud<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>--restart<span class="w"> </span>always<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>--name<span class="w"> </span>nextcloud-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>docker.io/library/nextcloud:31
 </code></pre></div>
-<h2 id="users-database">Users database</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">users</span><span class="p">:</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nt">username</span><span class="p">:</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$argon2id$...</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user display name</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user@example.com</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">        </span><span class="nt">groups</span><span class="p">:</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admins</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dev</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">        </span><span class="nt">given_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">        </span><span class="nt">middle_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">        </span><span class="nt">family_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">        </span><span class="nt">nickname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">        </span><span class="nt">gender</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">        </span><span class="nt">birthdate</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">        </span><span class="nt">website</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">        </span><span class="nt">profile</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">        </span><span class="nt">picture</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">        </span><span class="nt">zoneinfo</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">        </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">        </span><span class="nt">phone_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">        </span><span class="nt">phone_extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">        </span><span class="nt">disabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
-<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">        </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
-<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">        </span><span class="nt">extra</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>podman exec -it --user www-data nextcloud-app php occ maintenance:install
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>podman exec --user www-data nextcloud-app php occ config:system:set trusted_domains 0 --value=&quot;cloud.nmsd.xyz&quot;
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>podman exec --user www-data nextcloud-app php occ config:system:set overwriteprotocol --value &quot;https&quot;
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>podman exec --user www-data nextcloud-app php occ config:system:set overwrite.cli.url --value &quot;https://cloud.nmsd.xyz&quot;
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>podman exec --user www-data nextcloud-app php occ config:system:set trusted_proxies 0 --value=&quot;10.10.10.2&quot;
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>podman exec --user www-data nextcloud-app php occ config:system:set default_phone_region --value &quot;NL&quot;
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>podman exec -it --user www-data nextcloud-app php occ db:convert-type --port=&quot;3306&quot; --all-apps mysql nextcloud nextcloud nextcloud
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>podman exec --user www-data nextcloud-app php occ config:system:set mysql.utf8mb4 --type boolean --value=&quot;true&quot;
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>podman exec --user www-data nextcloud-app php occ maintenance:repair --include-expensive
 </code></pre></div>
+<p>OpenID setting</p>
+<p>```
+podman exec --user www-data nextcloud-app php occ config:system:set allow_user_to_change_display_name --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set lost_password_link --value="disabled"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_provider_url --value="https://auth.nmsd.xyz"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_client_id --value="nextcloud"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_client_secret --value="secret"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_auto_redirect --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_end_session_redirect --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_button_text --value="Log in with Authelia"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_hide_password_form --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_use_id_token --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_attributes id --value="preferred_username"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_attributes name --value="name"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_attributes mail --value="email"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_attributes groups --value="groups"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_attributes is_admin --value=is_nextcloud_admin
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_default_group --value="oidc"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_use_external_storage --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_scope --value="openid profile email groups nextcloud_userinfo"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_proxy_ldap --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_disable_registration --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_redir_fallback --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_tls_verify --type boolean --value="true"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_create_groups --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_webdav_enabled --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_password_authentication --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_public_key_caching_time --type integer --value="86400"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_min_time_between_jwks_requests --type integer --value="10"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_well_known_caching_time --type integer --value="86400"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_update_avatar --type boolean --value="false"
+podman exec --user www-data nextcloud-app php occ config:system:set oidc_login_code_challenge_method --value="S256"</p>
 
 
 
