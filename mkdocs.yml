@@ -60,10 +60,7 @@ copyright: Copyright &copy; 2019 - 2024 Nima Saed
 # pages
 nav:
   - 'About': 'index.md'
-  - 'Resume':
-    - 'Education and publications': 'resume/education.md'
-    - 'Professional Experience': 'resume/professional_experience.md'
-    - 'Others' : 'resume/other.md'
+  - 'Resume': 'resume/resume.pdf'
   - 'Blog':
     - '2023':
       - 'Enabling Touch ID for sudo ': 'blog/sudo-with-touch-id-on-Mac.md'
