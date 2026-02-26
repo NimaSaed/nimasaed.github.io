@@ -62,7 +62,7 @@ nav:
   - 'About': 'index.md'
   - 'Resume': 'resume/resume.pdf'
   - 'Blog':
-    - '2026':
+    - '2025':
       - 'CSRF Protection with a Signed Double-Submit Cookie': 'blog/CSRF-Protection-with-a-Signed-Double-Submit-Cookie.md'
     - '2023':
       - 'Enabling Touch ID for sudo ': 'blog/sudo-with-touch-id-on-Mac.md'
