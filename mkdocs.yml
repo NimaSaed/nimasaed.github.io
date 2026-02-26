@@ -60,7 +60,7 @@ copyright: Copyright &copy; 2019 - 2024 Nima Saed
 # pages
 nav:
   - 'About': 'index.md'
-  - 'Resume': 'resume/resume.pdf'
+  - 'Resume': 'https://nmsd.xyz/resume/resume.pdf'
   - 'Blog':
     - '2025':
       - 'CSRF Protection with a Signed Double-Submit Cookie': 'blog/CSRF-Protection-with-a-Signed-Double-Submit-Cookie.md'
