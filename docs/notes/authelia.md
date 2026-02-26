@@ -24,9 +24,11 @@ create \
 ## To create secret
 
 ```bash
-printf 'myjwtsecret' | podman secret create authelia_jwt_secret -
-printf 'mysessionsecret' | podman secret create authelia_session_secret -
-printf 'mystorageenckey' | podman secret create authelia_storage_encryption_key -
+op read -n "op://Private/Authelia/AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET" | ssh user@server "podman secret create AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET -"
+op read -n "op://Private/Authelia/AUTHELIA_SESSION_SECRET" | ssh user@server "podman secret create AUTHELIA_SESSION_SECRET -"
+op read -n "op://Private/Authelia/AUTHELIA_STORAGE_ENCRYPTION_KEY" | ssh user@server "podman secret create AUTHELIA_STORAGE_ENCRYPTION_KEY -"
+op read -n "op://Private/lbp2cmp2zveznlrnptirnotaxy/SMTP password" | ssh user@server "podman secret create ICLOUD_SMTP_PASSWORD -"
+op read -n "op://Private/Authelia/AUTHELIA_IDENTITY_PROVIDERS_OIDC_HMAC_SECRET"	| ssh user@server "podman secret create AUTHELIA_IDENTITY_PROVIDERS_OIDC_HMAC_SECRET -"
 ```
 
 ## To replace secret
@@ -58,19 +60,32 @@ podman run \
 --env AUTHELIA_SERVER_ADDRESS='tcp://:9091' \
 --env AUTHELIA_LOG_LEVEL=warn \
 --env AUTHELIA_TOTP_ISSUER='auth.example.com' \
---env AUTHELIA_AUTHENTICATION_BACKEND_FILE_PATH='/config/users_database.yml' \
 --env AUTHELIA_ACCESS_CONTROL_DEFAULT_POLICY='deny' \
 --env AUTHELIA_REGULATION_MAX_RETRIES=3 \
 --env AUTHELIA_REGULATION_FIND_TIME="2 minutes" \
 --env AUTHELIA_REGULATION_BAN_TIME="5 minutes" \
 --env AUTHELIA_STORAGE_LOCAL_PATH="/config/db.sqlite3" \
---env AUTHELIA_NOTIFIER_FILESYSTEM_FILENAME="/config/notification.txt" \
---secret authelia_jwt_secret,type=env,target=AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET \
---secret authelia_session_secret,type=env,target=AUTHELIA_SESSION_SECRET \
---secret authelia_storage_encryption_key,type=env,target=AUTHELIA_STORAGE_ENCRYPTION_KEY \
+--env AUTHELIA_NOTIFIER_DISABLE_STARTUP_CHECK=false \
+--env AUTHELIA_NOTIFIER_SMTP_ADDRESS="submission://smtp.mail.me.com:587" \
+--env AUTHELIA_NOTIFIER_SMTP_USERNAME=user@example.com \
+--env AUTHELIA_NOTIFIER_SMTP_SENDER="Authelia <info@example.com>" \
+--env AUTHELIA_NOTIFIER_DISABLE_STARTUP_CHECK=false \
+--env AUTHELIA_NOTIFIER_SMTP_DISABLE_REQUIRE_TLS=false \
+--secret ICLOUD_SMTP_PASSWORD,type=env,target=AUTHELIA_NOTIFIER_SMTP_PASSWORD \
+--secret AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET,type=env,target=AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET \
+--secret AUTHELIA_SESSION_SECRET,type=env,target=AUTHELIA_SESSION_SECRET \
+--secret AUTHELIA_STORAGE_ENCRYPTION_KEY,type=env,target=AUTHELIA_STORAGE_ENCRYPTION_KEY \
+--env AUTHELIA_AUTHENTICATION_BACKEND_LDAP_IMPLEMENTATION="lldap" \
+--env AUTHELIA_AUTHENTICATION_BACKEND_LDAP_ADDRESS="ldap://host.docker.internal:3890" \
+--env AUTHELIA_AUTHENTICATION_BACKEND_LDAP_BASE_DN=dc=example,dc=com \
+--env AUTHELIA_AUTHENTICATION_BACKEND_LDAP_USER=uid=admin,ou=people,dc=example,dc=com \
+--secret LLDAP_LDAP_USER_PASS,type=env,target=AUTHELIA_AUTHENTICATION_BACKEND_LDAP_PASSWORD \
+--secret AUTHELIA_IDENTITY_PROVIDERS_OIDC_HMAC_SECRET,type=env,target=AUTHELIA_IDENTITY_PROVIDERS_OIDC_HMAC_SECRET \
 --volume $HOME/authelia:/config:z \
 ghcr.io/authelia/authelia:latest
 ```
+
+
 
 
 ## To test the authentication

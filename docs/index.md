@@ -17,7 +17,7 @@ hide:
 
 I am a seasoned security expert with 19 years of experience in IT, including 13 years specializing in software and cloud security. My expertise lies in securing critical systems, particularly in authentication, authorization, and cryptography. I excel at automating security processes and integrating them into modern software development lifecycles (SSDLC).
 
-Over my career, I’ve collaborated across industries such as healthcare, education, manufacturing, and technology, addressing their unique privacy and security challenges. My approach centers on making security a seamless enabler for innovation by championing automation and simplicity.
+Over my career, I’ve collaborated across industries such as healthcare, education, manufacturing, and technology—addressing their unique privacy, IT, and OT security challenges. My approach centers on making security a seamless enabler for innovation by championing automation and simplicity.
 
 As a trainer and mentor, I am passionate about empowering teams to adopt secure development practices and strengthen their security postures. Whether through penetration testing, threat modeling, or building secure cloud infrastructures, my goal is to ensure businesses thrive in the digital age while staying secure.
 
