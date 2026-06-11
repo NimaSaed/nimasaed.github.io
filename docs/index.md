@@ -11,7 +11,7 @@ hide:
 ## Application Security Architect | Software Security Engineer <br> Ethical Hacker | DevSecOps Engineer | Cloud Security Engineer
 
 - nima [at] nmsd [dot] xyz
-- 00 31 six one four 61 two zero 95
+- 00 31 xx xx xx xx xx xx
 
 ## Biography
 
